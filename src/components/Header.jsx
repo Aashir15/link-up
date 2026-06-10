@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, Phone, Mail, ChevronDown, Logs } from "lucide-react";
+import { Menu, X, Phone, Mail, ChevronDown, Logs, Map } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import Button from "./PrimaryBtn";
@@ -45,13 +45,13 @@ export default function Header() {
             <div className="bg-(--text-color) text-white text-sm">
                 <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
                     <div className="flex items-center gap-6">
-                        <a href="tel:3052656226" className="flex items-center gap-2">
+                        <a href="tel:9015571809" className="flex items-center gap-2">
                             <Phone size={16} />
-                            <span>(305) 265-6226</span>
+                            <span>901-557-1809</span>
                         </a>
-                        <a href="mailto:exm@gmail.com" className="flex items-center gap-2">
-                            <Mail size={16} />
-                            <span>exm@gmail.com</span>
+                        <a className="flex items-center gap-2">
+                            <Map size={16} />
+                            <span>3124 Brother Blvd, Suite 104, Bartlett, TN 38133</span>
                         </a>
                     </div>
 
