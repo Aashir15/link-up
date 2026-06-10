@@ -106,7 +106,7 @@ export default function Header() {
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden lg:flex items-center gap-8 font-medium text-white">
+                    <nav className="hidden lg:flex items-center gap-5 font-medium text-white">
                         {navLinks.map((link) => (
                             <div key={link.name} className="relative group">
 
@@ -199,7 +199,9 @@ export default function Header() {
 
                 </div>
                 <div className="flex flex-wrap items-center justify-center gap-4">
-                    <Button text="Contact Us" to="/contact" />
+                    <div onClick={() => setOpen(false)}>
+                        <Button text="Contact Us" to="/contact" />
+                    </div>
                     <Button
                         text="Login to Portal"
                         to="https://portal.surgepays.com/MemberZone/Login.aspx"

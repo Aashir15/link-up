@@ -18,7 +18,7 @@ import {
 import Commission from "./Commission";
 
 export default function Dealer() {
-   
+
     const [showPasswordModal, setShowPasswordModal] = useState(false);
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
@@ -132,8 +132,8 @@ export default function Dealer() {
                                 setActiveTab(tab.id);
                             }}
                             className={`rounded-full px-7 py-3 text-sm font-bold transition-all duration-300 ${activeTab === tab.id
-                                    ? "bg-(--secondary-color) text-white"
-                                    : "bg-[#064C7A] text-white hover:bg-(--secondary-color)"
+                                ? "bg-(--secondary-color) text-white"
+                                : "bg-[#064C7A] text-white hover:bg-(--secondary-color)"
                                 }`}
                         >
                             {tab.label}
@@ -141,7 +141,7 @@ export default function Dealer() {
                     ))}
                     {
                         showPasswordModal && (
-                            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+                            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
                                 <div className="w-full max-w-md rounded-2xl bg-white p-6">
                                     <h2 className="text-xl font-bold mb-2">
                                         Dealer Access
@@ -156,7 +156,7 @@ export default function Dealer() {
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
                                         placeholder="Password"
-                                        className="w-full border rounded-lg p-3"
+                                        className="w-full border border-gray-300 rounded-lg p-3"
                                     />
 
                                     {error && (
@@ -282,7 +282,7 @@ export default function Dealer() {
             </div>
         </section>
 
-        
+
     );
 }
 

@@ -79,7 +79,7 @@ export default function Contact() {
         setLoading(true);
 
         const data = {
-            access_key: "39dd7d3d-e45a-4211-af38-def3bb9f20a9",
+            access_key: "c8025cba-cb7c-48bd-bbc4-1f59cfd3c3a7",
             subject: "New Store Inquiry",
             from_name: "LinkUp Mobile",
             ...formData,

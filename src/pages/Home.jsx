@@ -139,7 +139,7 @@ function Home() {
                                 Now Introducing
                             </h3>
 
-                            <div className="mt-6 flex flex-wrap items-center gap-4">
+                            <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
                                 <img
                                     src="/assets/home-1.png"
                                     alt="Low Weekly Payments"
@@ -153,13 +153,13 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className="relative w-full max-w-130 h-125 mx-auto">
+                        <div className="relative w-full max-w-130 md:h-125 h-105 mx-auto">
                             {banners.map((banner, index) => (
                                 <img
                                     key={index}
                                     src={banner}
                                     alt={`Banner ${index + 1}`}
-                                    className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ${active === index
+                                    className={`absolute inset-0 object-contain transition-opacity duration-1000 ${active === index
                                             ? "opacity-100"
                                             : "opacity-0"
                                         }`}
@@ -243,7 +243,7 @@ function Home() {
             </div>
 
             <section className="md:py-16 py-8 bg-[url('/assets/bg.png')] bg-cover bg-center bg-no-repeat">
-                <div className="max-w-7xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-6">
                     <h2 className="text-center text-3xl md:text-5xl font-bold text-(--primary-color)">
                         What Does LinkUp Unlock For Retail Partners?
                     </h2>
@@ -322,7 +322,7 @@ function Home() {
                     <div className="h-0.5 bg-(--primary-color) my-8" />
 
                     {/* Title */}
-                    <h3 className="text-center text-4xl md:text-5xl font-bold text-slate-800 mb-12">
+                    <h3 className="text-center text-3xl md:text-5xl font-bold text-slate-800 mb-12">
                         Your Top Questions, answered
                     </h3>
 
@@ -377,12 +377,12 @@ export default Home;
 
 function FaqCard({ title, text }) {
     return (
-        <div className="w-full md:w-140 bg-white border-[3px] border-(--primary-color) rounded-2xl p-5 flex gap-4 items-center shadow-sm">
-            <Search
-                size={38}
-                className="text-(--primary-color) shrink-0"
-                strokeWidth={2.5}
-            />
+        <div className="w-full md:w-140 bg-white border-[3px] border-(--primary-color) rounded-2xl p-5 flex flex-col md:flex-row gap-4 items-center shadow-sm">
+                <Search
+                    size={38}
+                    className="text-(--primary-color) shrink-0"
+                    strokeWidth={2.5}
+                />
 
             <div>
                 <h4 className="font-bold text-xl text-slate-800 mb-2">

@@ -93,7 +93,7 @@ export default function About() {
 
             <section className="bg-(--primary-color)">
                 <div className="max-w-7xl mx-auto px-6 py-12">
-                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    <div className="grid lg:grid-cols-2 items-center">
                         <div className="text-white">
 
                             <h2 className="primary-heading mt-2 text-(--secondary-color)!">
@@ -165,15 +165,18 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="bg-(--secondary-color) max-w-2xl mx-auto mb-8 rounded-3xl py-12 px-6 text-center">
-                <h2 className="text-3xl text-(--primary-color) md:text-4xl font-bold mb-4">
-                    Level Up with LinkUp
-                </h2>
+            <section className="px-4">
+                <div className="bg-(--secondary-color) max-w-2xl mx-auto mb-8 rounded-3xl py-12 px-6 text-center">
+                    <h2 className="text-3xl text-(--primary-color) md:text-4xl font-bold mb-4">
+                        Level Up with LinkUp
+                    </h2>
 
-                <p className="text-lg opacity-90 max-w-2xl mx-auto font-semibold mb-8">
-                    Thousands have already made the move to freedom, flexibility, and no contracts. LinkUp and live on your terms.
-                </p>
+                    <p className="text-lg opacity-90 max-w-2xl mx-auto font-semibold">
+                        Thousands have already made the move to freedom, flexibility, and no contracts. LinkUp and live on your terms.
+                    </p>
+                </div>
             </section>
+
 
         </>
     )
