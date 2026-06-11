@@ -41,48 +41,6 @@ export default function Header() {
     return (
         <header className="w-full">
 
-            {/* Top Bar */}
-            <div className="bg-(--text-color) text-white text-sm">
-                <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
-                    <div className="flex items-center gap-6">
-                        <a href="tel:9015571809" className="flex items-center gap-2">
-                            <Phone size={16} />
-                            <span>901-557-1809</span>
-                        </a>
-                        <a className="flex items-center gap-2">
-                            <Map size={16} />
-                            <span>3124 Brother Blvd, Suite 104, Bartlett, TN 38133</span>
-                        </a>
-                    </div>
-
-                    <div className="hidden md:flex items-center gap-4 text-lg">
-                        <a
-                            href="https://www.instagram.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="ri-instagram-fill cursor-pointer"></i>
-                        </a>
-
-                        <a
-                            href="https://www.facebook.com/exm#"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="ri-facebook-fill cursor-pointer"></i>
-                        </a>
-
-                        <a
-                            href="https://www.linkedin.com/in/annie-obregon-29a46241/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="ri-linkedin-fill cursor-pointer"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
             {/* NAVBAR */}
             <div
                 className={`bg-[#014d7d] transition-all duration-300 z-50 ${sticky

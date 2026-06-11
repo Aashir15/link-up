@@ -15,6 +15,7 @@ import International from './pages/International'
 import Faq from './pages/Faq'
 import Dealer from './pages/Dealer'
 import Commission from './pages/Commission'
+import WhatsAppFloat from './components/WhatsAppFloat'
 
 
 
@@ -46,7 +47,7 @@ function App() {
         <Footer />
 
       </div>
-
+      <WhatsAppFloat />
     </BrowserRouter>
   )
 }
