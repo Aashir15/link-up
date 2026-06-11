@@ -16,6 +16,7 @@ import Faq from './pages/Faq'
 import Dealer from './pages/Dealer'
 import Commission from './pages/Commission'
 import WhatsAppFloat from './components/WhatsAppFloat'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 
