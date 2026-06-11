@@ -115,8 +115,8 @@ export default function Header() {
                 className={`fixed top-0 right-0 h-full w-72 bg-white shadow-lg transition-transform duration-300 z-50 ${open ? "translate-x-0" : "translate-x-full"
                     }`}
             >
-                <div className="flex justify-between items-center p-4 border-gray-300 border-b">
-                    <img src="/assets/logo.png" className="w-20" alt="" />
+                <div className="flex justify-end items-center p-4 border-gray-300 border-b">
+                    
                     <button onClick={() => setOpen(false)}>
                         <X />
                     </button>
